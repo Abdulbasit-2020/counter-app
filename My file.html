@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>   
+            MY DOM
+        </title>
+        <link rel="stylesheet" href="C:\Users\DELL\My Javascript\myfile.css">
+    </head>
+    <body>
+         
+      <h1 id="count">0</h1>
+      <button id="increase">+</button>
+      <button id="decrease">-</button>
+      <button id="reset">*</button>
+    
+             
+        
+      <script>
+       let count = 0
+       let countdisplay=document.getElementById("count");
+       let increaseBtn = document.getElementById("increase");
+       let decreaseBtn = document.getElementById("decrease");
+       let resetBtn = document.getElementById("reset");
+
+       increaseBtn.onclick = function(){
+        count++;
+        countdisplay.innerHTML = count;
+       }
+
+       decreaseBtn.onclick = function(){
+        count--;
+        countdisplay.innerHTML = count;
+
+       }
+
+       resetBtn.onclick = function(){
+        count = 0;
+        countdisplay.innerHTML=count;
+       }
+      </script>      
+         
+
+
+
+       
+    </body>
+</html>    
